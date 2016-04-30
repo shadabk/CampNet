@@ -1,0 +1,161 @@
+<?php
+// Start the session
+session_start();
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        
+      
+       
+      
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" href="css/style.css">
+	<title>Sign Up</title>
+
+<style>
+	
+	body {
+		padding: 0; margin: 0;
+		overflow: hidden;
+	}
+
+	.background {
+		position: absolute; top: -10%; left: -10%; 
+		width: 120%; height: 120%;
+		z-index: 1;
+		font-family: Courier;
+	}
+	
+	.cloud {
+		position: absolute; top: 0; left: 0; 
+		width: auto; height: auto;
+		z-index: 2;
+		opacity: 0.8;
+	}
+
+	
+	.header {
+	    padding-top:0%;
+		position: fixed; top: 0; left: 0;
+		width: 100%; height: auto;
+		padding: 12px 0;
+		text-align: center;
+		z-index: 100;
+		color: #fff;
+		font-family: Courier;
+	}
+	.header h1 {
+		padding-top:0%;
+		font-size: 40px; 
+		font-weight: lighter; 
+	}
+	.header a {
+		font-size: 12px;
+		text-decoration: none;
+		padding-bottom: 2px;
+		border-bottom: 1px solid #fff;
+		color: #fff;
+	}
+
+</style>
+
+</head>
+<body>
+<div class="container demo-2">
+	<div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                   
+                </div>
+            
+	</div><!-- /container -->
+
+        
+        <script src="js/demo-2.js"></script>
+		
+		
+		
+		
+		
+	<header class="header">
+		<h1>CampNet</h1>
+		<div class="site__container">
+
+    <div class="grid__container">
+
+      <form  method="POST" action="up1.php" class="form form--login">
+
+        <div class="form__field">
+          <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+          <input name = "username" id="login__username" type="text" class="form__input" placeholder="Username" required>
+		  
+        </div>
+		
+		<div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+		  <input name = "email" id="login__username" type="text" class="form__input" placeholder="Email" required>
+					  
+
+        </div>
+		
+				<div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+          <input name="password" id="login__password" type="password" class="form__input" placeholder="Password" required>
+        </div>
+		
+		<div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+          <input name="password2" id="login__password" type="password" class="form__input" placeholder="Confirm Password" required>
+        </div>
+		
+		
+
+        <div class="form__field">
+          <input type="submit" name="submit" value="Next">
+		   
+        </div>
+
+      </form>
+
+      <p class="text--center">Already a member? <a href="../signin/index.html">Sign in</a> <span class="fontawesome-arrow-right"></span></p>
+
+    </div>
+
+  </div>
+
+
+
+	</header>
+
+	
+	<img src="img/background.jpg" alt="New York" class="background">
+	
+
+	<script src="js/1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/2.js"></script>
+<script src="js/jquery-parallax.js"></script>
+
+
+	<script>
+		$( document ).mousemove( function( e ) {
+			$( '.background' ).parallax( -30, e );
+			$( '.cloud1' )	  .parallax( 10	, e );
+			$( '.cloud2' )	  .parallax( 20	, e );
+			$( '.cloud3' )	  .parallax( 30	, e );
+		});
+	</script>
+<script type="text/javascript">
+
+  
+
+</script>
+</body>
+</html>

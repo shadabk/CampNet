@@ -1,0 +1,185 @@
+<?php
+// Start the session
+session_start();
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="css/style.css">
+		
+		
+		
+		 <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" href="css/style.css">
+	<title>Sign Up</title>
+
+<style>
+	
+	body {
+		padding: 0; margin: 0;
+		overflow: hidden;
+	}
+
+	.background {
+		position: absolute; top: -10%; left: -10%; 
+		width: 120%; height: 120%;
+		z-index: 1;
+		font-family: Courier;
+	}
+	
+	.cloud {
+		position: absolute; top: 0; left: 0; 
+		width: auto; height: auto;
+		z-index: 2;
+		opacity: 0.8;
+	}
+
+	
+	.header {
+	    padding-top:0%;
+		position: fixed; top: 0; left: 0;
+		width: 100%; height: auto;
+		padding: 12px 0;
+		text-align: center;
+		z-index: 100;
+		color: #fff;
+		font-family: Courier;
+	}
+	.header h1 {
+		padding-top:0%;
+		font-size: 40px; 
+		font-weight: lighter; 
+	}
+	.header a {
+		font-size: 12px;
+		text-decoration: none;
+		padding-bottom: 2px;
+		border-bottom: 1px solid #fff;
+		color: #fff;
+	}
+
+</style>
+
+</head>
+<body>
+
+<div class="container demo-2">
+	<div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                   
+                </div>
+            
+	</div><!-- /container -->
+
+        
+        <script src="js/demo-2.js"></script>
+		
+		
+
+	<header class="header">
+		<h1>CampNet</h1>
+		<div class="site__container">
+
+    <div class="grid__container">
+
+      <form  method="POST" action="up2.php" class="form form--login">
+
+        <div class="form__field">
+          <label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+          <input name = "name" id="login__username" type="text" class="form__input" placeholder="Full Name" required>
+		  
+        </div>
+
+
+<div class="form__field">
+          <label class="fontawesome-user" for="login__username"><span class="hidden">MIS</span></label>
+          <input name = "mis" id="login__username" type="text" class="form__input" placeholder="MIS" required>
+		  
+        </div>
+		
+		<div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden"></span></label>
+		  <select style = "background-color:#3B4148;color:white;" name="college" id="login__password" type="text" class="form__input" placeholder="Email" required><option value="College Of Engineering Pune">College Of Engineering Pune</option>
+			  <option value="Pune Institue of Computer Technology">Pune Institue of Computer Technology</option>
+			  <option value="Sinhagad College of Engineering">Sinhagad College of Engineering</option>
+			  <option value="Visvesvaraya National Institute of Technology">Visvesvaraya National Institute of Technology</option>
+		  </select>
+					  
+
+        </div>
+		
+				<div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden"></span></label>
+          <select style = "background-color:#3B4148;color:white;" name="branch" id="login__password" type="text" class="form__input" placeholder="branch" required><option value="Computer Engineering">Computer Engineering</option>
+						  <option value="Mechanical Engineering">Mechanical Engineering</option>
+						  <option value="Electrical Engineering">Electrical Engineering</option>
+						  <option value="Production Engineering">Production Engineering</option>
+						   <option value="Electronics & Telecommunication Engineering">Electronics & Telecommunication Engineering</option>
+							<option value="Civil Engineering">Civil Engineering</option>
+							 <option value="Instrumentation & Control Engineering">Instrumentation & Control Engineering</option>
+							  <option value="Information Technology Engineering">Information Technology Engineering</option>
+							  <option value="Metallurgy Engineering">Metallurgy Engineering</option>
+							  <option value="Planning">Planning</option>
+				  
+			  </select>
+        </div>
+		
+				<div class="form__field">
+          <label class="fontawesome-lock" for="login__password"><span class="hidden"></span></label>
+         <select style = "background-color:#3B4148;color:white;" name="year" id="login__password" type="text" class="form__input" placeholder="year" required><option value="1">First Year</option>
+			  <option value="2">Second Year</option>
+			  <option value="3">Third Year</option>
+			  <option value="4">Final Year</option>
+			  </select>
+        </div>
+		
+		
+
+        <div class="form__field">
+          <input type="submit" name="submit" value="Submit">
+		   
+        </div>
+
+      </form>
+
+      <p class="text--center">Already a member? <a href="../signin/index.html">Sign in</a> <span class="fontawesome-arrow-right"></span></p>
+
+    </div>
+
+  </div>
+
+		
+
+	</header>
+
+	<img src="img/background.jpg" alt="New York" class="background">
+
+	
+	<script src="js/1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/2.js"></script>
+<script src="js/jquery-parallax.js"></script>
+
+
+<script>
+		$( document ).mousemove( function( e ) {
+			$( '.background' ).parallax( -30, e );
+			$( '.cloud1' )	  .parallax( 10	, e );
+			$( '.cloud2' )	  .parallax( 20	, e );
+			$( '.cloud3' )	  .parallax( 30	, e );
+		});
+	</script>
+<script type="text/javascript">
+
+  
+
+</script>
+</body>
+</html>
